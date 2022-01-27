@@ -1,6 +1,6 @@
 from colorsys import hsv_to_rgb
-from Cursor import Cursor
 from random import randint
+from Cursor import Cursor
 
 def handle_off_screen(cursor : Cursor):
     cursor.ink(False)
