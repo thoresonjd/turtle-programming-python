@@ -1,5 +1,8 @@
-import turtle
+from colorsys import hls_to_rgb
+from Cursor import Cursor
 
-justin = turtle.Turtle()
+def main():
+    cursor = Cursor('white', 'grey', 0, -100, 0, 67.5)
 
-turtle.done()
+if __name__ == '__main__':
+    main()
