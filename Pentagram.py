@@ -8,7 +8,7 @@ def pentagram(cursor : Cursor, distance : float):
         cursor.turn(144)
 
 def main():
-    cursor = Cursor('red', 'black', 1, 100, 0, 0, 144)
+    cursor = Cursor('red', 'black', 'classic', 1, 100, 0, 0, 144)
     pentagram(cursor, 200)
 
 if __name__ == '__main__':

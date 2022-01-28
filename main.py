@@ -14,7 +14,7 @@ def draw(cursor : Cursor):
         distance %= 150
 
 def main():
-    cursor = Cursor('red', 'black', 2, 0, 0, 0, 144)
+    cursor = Cursor('white', 'black', 'classic', 2, 0, 0, 0, 144)
     draw(cursor)
 
 if __name__ == '__main__':

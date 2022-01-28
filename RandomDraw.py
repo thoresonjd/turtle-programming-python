@@ -18,7 +18,7 @@ def draw(cursor : Cursor):
             handle_off_screen(cursor)
 
 def main():
-    cursor = Cursor('white', 'black', 5, 0, 0, 0, 90)
+    cursor = Cursor('white', 'black', 'classic', 5, 0, 0, 0, 90)
     draw(cursor)
 
 if __name__ == '__main__':

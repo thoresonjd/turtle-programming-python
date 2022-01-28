@@ -2,10 +2,12 @@ import turtle
 
 class Cursor:
 
-    def __init__(self, color, bgcolor, w : int, x : float, y : float, speed : int, angle : int):
+    def __init__(self, color, bgcolor, shape : str, w : int, x : float, y : float, speed : int, angle : int):
+        self.shapes = ['arrow', 'turtle', 'circle', 'square', 'triangle', 'classic']
         self.cursor = turtle.Turtle()
         self.color(color)
         self.screenColor(bgcolor)
+        self.shape(shape)
         self.ink(False)
         self.width(w)
         self.goto(x, y)
@@ -18,6 +20,10 @@ class Cursor:
 
     def screenColor(self, color):
         self.cursor.getscreen().bgcolor(color)
+
+    def shape(self, shape : str):
+        if shape in self.shapes:
+            self.cursor.shape(shape)
 
     def ink(self, on : bool):
         if on:
